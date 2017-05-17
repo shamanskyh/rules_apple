@@ -16,6 +16,10 @@
 
 set -eu
 
+echo "Beginning the iOS Test Runner"
+
+sleep 60
+
 if [[ "%(test_type)s" = "XCUITEST" ]]; then
   echo "This runner only works with ios_unit_test."
   exit 1
